@@ -9,7 +9,10 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			 if (arr[0] == null || arr[0]==1) {
+			 if (arr[0] == null ) {
+          return -Infinity;
+        }
+		if (arr[0] == 1 && arr[1] == 1 ) {
           return -Infinity;
         }
         if (arr[0] == 1 && arr.length == 1) {
@@ -26,7 +29,7 @@
         }
         return arr[1];
 		}
-
+/* 
 		   function Main() {
 			var n = prompt("Enter the number of elements");
 			var arr = [];
@@ -35,7 +38,7 @@
 			}
 			alert(secondHighest(arr));
 		}   
-		Main();
+		Main(); */
 	</script>
 
     <script type="text/javascript" src="./script.js">
